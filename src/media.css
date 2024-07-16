@@ -361,24 +361,24 @@
     }
 
     .dashboard_piechart {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .dashboard_home {
         border-left: 1px solid black;
-        padding: 40px;
+        padding: 0px;
     }
 
     .home_img {
         display: flex;
         flex-direction: column;
-        column-gap: 20px;
+        column-gap: 0px;
         align-items: center;
     }
 
     .home_img h3 {
         font-family: "Playwrite CU", cursive;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 600;
     }
 
@@ -395,14 +395,14 @@
 
     .home_content p {
         font-family: "Playwrite CU", cursive;
-        font-size: 20px;
+        font-size: 13px;
         font-weight: 600;
     }
 
     .home_myself_img {
         position: absolute;
-        top: 40px;
-        left: 160px;
+        top: 0px;
+        left: 120px;
         clip-path: circle(40% at 50% 50%);
     }
 
