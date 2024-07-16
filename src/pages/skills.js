@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
+import SlideInOnVisible from '../hooks/intersectionObserver';
 
 const settings = {
     width: 100,
@@ -37,15 +39,25 @@ const Skills = () => {
         setActiveSection('home');
     };
 
+    const handleUserClick = () => {
+        setActiveSection('home');
+    };
+
     return (
         <div className='container_bg'>
             <div className='skills_wrapper'>
                 <h2>skills</h2>
+                <SlideInOnVisible direction="left" id="skill1">
                 <div className='skills_dashboard'>
                     <div className='dashboard_sidebar'>
-                        <HomeRoundedIcon onClick={handleHomeClick} />
-                        <MenuRoundedIcon onClick={handleMenuClick} />
-                        <PieChartIcon onClick={handlePieChartClick} />
+                        <div className='dashboard_actions'>
+                            <div><HomeRoundedIcon onClick={handleHomeClick} /></div>
+                            <div><MenuRoundedIcon onClick={handleMenuClick} /></div>
+                            <div><PieChartIcon onClick={handlePieChartClick} /></div>
+                        </div>
+                        <div className='user_dashboard'>
+                            <AccountCircleIcon onClick={handleUserClick} />
+                        </div>
                     </div>
                     {activeSection === 'menu' && (
                         <div className='dashboard_homerounded'>
@@ -112,7 +124,23 @@ const Skills = () => {
                             ))}
                         </div>
                     )}
+
+                    {activeSection === 'home' && (
+                        <div className='dashboard_home'>
+                            <div className='home_img'>
+                                <img src="/assets/vector/2.png" alt="vector" />
+                                <div className='home_myself_img'>
+                                    <img src="/assets/myself/2.jpg" alt="myself" />
+                                </div>
+                                <h3>A.Arthi</h3>
+                            </div>
+                            <div className='home_content'>
+                               <p> Elit magna proident elit ullamco commodo qui Lorem. Tempor exercitation amet tempor excepteur est sit id ullamco mollit pariatur magna. Ipsum tempor dolore do eu nisi officia aliqua fugiat aliqua.</p>
+                            </div>
+                        </div>
+                    )}
                 </div>
+                </SlideInOnVisible>
             </div>
         </div>
     );

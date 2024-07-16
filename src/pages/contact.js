@@ -31,7 +31,7 @@ const Contact = () => {
                         <a href="https://leetcode.com/arthianbalagan180/">
                             <img src="/assets/contact/leetcode.png" alt="Leetcode" className='contact_id1' />
                         </a>
-                        <a href="https://leetcode.com/arthianbalagan180/">
+                        <a href="https://arthimyportfolio.netlify.app/">
                             <img src="/assets/contact/netlify.svg" alt="Netlify" className='contact_id1' />
                         </a>
                     </div>
