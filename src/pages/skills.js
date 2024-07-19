@@ -135,7 +135,7 @@ const Skills = () => {
                                 <h3>A.Arthi</h3>
                             </div>
                             <div className='home_content'>
-                               <p> Elit magna proident elit ullamco commodo qui Lorem. Tempor exercitation amet tempor excepteur est sit id ullamco mollit pariatur magna. Ipsum tempor dolore do eu nisi officia aliqua fugiat aliqua.</p>
+                               <p> I bring a creative eye to every project and have a passion for ensuring that designs are not only visually appealing but also user-friendly. I believe in the power of collaboration and enjoy working closely with teams to bring ideas to life.</p>
                             </div>
                         </div>
                     )}
